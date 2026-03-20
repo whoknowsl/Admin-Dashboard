@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --secondery-color: #112A46;
@@ -15,6 +16,9 @@
     --font-weight-bold:    700;
 }
 body{
+    background-color: #ACC8E5;
+    gap: 15px;
+    width: 100%;
     display: grid;
     grid-template-columns: 250px 200px 200px 200px;
     grid-template-rows: 150px 200px 200px 200px;
@@ -24,6 +28,7 @@ body{
     grid-column: 1/2;
     grid-row: 1/8;
     display: grid;
+    width: auto;
 }
 .header{
     background-color:var(--primary-color);
@@ -32,11 +37,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr ;
-}
-.content{
-    background-color: var(--primary-color);
-    grid-column: 2/8;
-    grid-row: 2/8;
+    width: auto;
 }
 .serach-bar{
     display: grid;
@@ -117,8 +118,15 @@ input{
 }
 .sidebar{
     display: grid;
-    grid-template-rows: repeat(3,0.75fr);
+    grid-template-rows: repeat(1,0.20fr 0.5fr 0.20fr 1fr);
     gap: 50px;
+    width: auto;
+     background-color: var(--secondery-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    border: hidden;
+    font-weight: 500;
+    color: var(--primary-color);
 }
 .logo{
     display: grid;
@@ -131,7 +139,7 @@ input{
 }
 .sidebar-btn {
     display: grid;
-    grid-template-columns: repeat(1,0.25fr 0.75fr);
+    grid-template-columns: repeat(1,0.25fr 0.75fr );
     font-size: 25px;
     justify-items: center;
     align-items: center;
@@ -153,4 +161,119 @@ button{
     align-items: center;
     align-content: center;
     gap: 10px;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr 30%);
+    grid-template-rows: repeat(1,1fr 1fr);
+    background-color: var(--primary-color);
+    grid-column: 2/8;
+    grid-row: 2/8;
+    width: auto;
+    gap: 15px;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,0.25fr 1fr 1fr 1fr);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    gap: 15px;
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(1,0.10fr 1fr);
+    grid-template-rows: repeat(1 ,0.25fr 1fr 0.25fr);
+    color: var(--secondery-color);
+    background-color: white;
+    border-radius: 6px;
+}
+p{
+    font-size: var(--font-size-sm);
+    font-weight: 200;
+}
+.card-p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 5px;
+}
+#project-h3{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.card-4{
+    padding: 10px;
+    font-size: 20px;
+    align-self: end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.card-icon{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    font-size: var(--font-size-md);
+    color: var(--secondery-color);
+    padding: 10px;
+}
+.line{
+    padding: 3px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: #112A46;
+    width: 2px;
+    height: inherit;
+}
+.announcements{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.anounc-card{
+    display: grid;
+    align-items: center;
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    min-height:400px;
+}
+hr{
+    height: 1px;
+    width: 90%;
+}
+.trending{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.trending-cards{
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3,70px);
+    padding: 10px;
+    border-radius: 6px;
+    justify-items: start;
+}
+.trending-card{
+    display: grid;
+    grid-template-columns: repeat(1,0.75fr 1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+#trend-img{
+    border-radius: 50px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#trend-name{
+    font-size: 10px;
+} 
+#trend-p{
+    font-size: var(--font-size-mdsm);
+    font-weight: 500;
 }
