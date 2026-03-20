@@ -2,101 +2,218 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
   </head>
   <body>
-    <div class="sidebar">
-      <div class="logo"><img src="odin-lined.png" alt="" width="100px" /></div>
-      <div class="sidebar-btn">
-        <i class="fa-solid fa-igloo"></i><button>Home</button
-        ><i class="fa-regular fa-address-card"></i><button></i>Profile</button
-        ><i class="fa-regular fa-message"></i><button></i>Messages</button><i class="fa-solid fa-clock"></i><button></i></i>History</button><i class="fa-solid fa-clipboard-list"></i><button></i>Tasks</button
-        ><i class="fa-solid fa-users-line"></i><button>Communities</button>
+ 
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="odin-lined.png" alt="logo" width="50px"/>
+        <span>Dashboard</span>
       </div>
-      <div class="sidebar-btn-1">
-        <i class="fa-solid fa-gear"></i><button>Settings</button>
-        <i class="fa-regular fa-life-ring"></i><button>Support</button>
-        <i class="fa-solid fa-shield-halved"></i><button>Privacy</button>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active"><i class="fa-solid fa-igloo"></i><span>Home</span></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-address-card"></i><span>Profile</span></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-message"></i><span>Messages</span></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-clock"></i><span>History</span></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-clipboard-list"></i><span>Tasks</span></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-users-line"></i><span>Communities</span></a>
+      </nav>
+      <nav class="sidebar-nav sidebar-nav-bottom">
+        <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-life-ring"></i><span>Support</span></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-shield-halved"></i><span>Privacy</span></a>
+      </nav>
+    </aside>
+ 
+    <!-- MAIN -->
+    <div class="main">
+ 
+      <!-- HEADER -->
+      <header class="header">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search..."/>
+        </div>
+        <div class="header-right">
+          <i class="fa-solid fa-bell fa-lg"></i>
+          <img src="profil.png" alt="profile" class="avatar"/>
+          <span class="username">Youssef</span>
+        </div>
+      </header>
+ 
+      <!-- PROFILE BAR -->
+      <div class="profile-bar">
+        <div class="profile-info">
+          <img src="profil.png" alt="profile" class="avatar avatar-lg"/>
+          <div>
+            <p class="hi-text">Hi there,</p>
+            <h2 class="profile-name">Youssef Oudada (@whoknows)</h2>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <button class="btn-action">New</button>
+          <button class="btn-action">Upload</button>
+          <button class="btn-action">Share</button>
+        </div>
+      </div>
+ 
+      <!-- CONTENT -->
+      <div class="content">
+ 
+        <!-- PROJECTS -->
+        <section class="projects">
+          <h3 class="section-title">Your Projects</h3>
+          <div class="cards-grid">
+ 
+            <div class="card">
+              <div class="card-bar"></div>
+              <div class="card-body">
+                <h4 class="card-title">Super Cool Project</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius ab sint blanditiis dolorem numquam dicta accusantium repudiandae ipsum.</p>
+                <div class="card-icons">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-solid fa-code-branch"></i>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="card">
+              <div class="card-bar"></div>
+              <div class="card-body">
+                <h4 class="card-title">Less Cool Project</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius ab sint blanditiis dolorem numquam dicta accusantium repudiandae ipsum.</p>
+                <div class="card-icons">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-solid fa-code-branch"></i>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="card">
+              <div class="card-bar"></div>
+              <div class="card-body">
+                <h4 class="card-title">Impossible App</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius ab sint blanditiis dolorem numquam dicta accusantium repudiandae ipsum.</p>
+                <div class="card-icons">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-solid fa-code-branch"></i>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="card">
+              <div class="card-bar"></div>
+              <div class="card-body">
+                <h4 class="card-title">Easy Peasy App</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius ab sint blanditiis dolorem numquam dicta accusantium repudiandae ipsum.</p>
+                <div class="card-icons">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-solid fa-code-branch"></i>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="card">
+              <div class="card-bar"></div>
+              <div class="card-body">
+                <h4 class="card-title">Ad Blocker</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius ab sint blanditiis dolorem numquam dicta accusantium repudiandae ipsum.</p>
+                <div class="card-icons">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-solid fa-code-branch"></i>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="card">
+              <div class="card-bar"></div>
+              <div class="card-body">
+                <h4 class="card-title">Money Maker</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius ab sint blanditiis dolorem numquam dicta accusantium repudiandae ipsum.</p>
+                <div class="card-icons">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-solid fa-code-branch"></i>
+                </div>
+              </div>
+            </div>
+ 
+          </div>
+        </section>
+ 
+        <!-- SIDEBAR RIGHT -->
+        <aside class="right-sidebar">
+ 
+          <!-- ANNOUNCEMENTS -->
+          <section class="announcements">
+            <h3 class="section-title">Announcements</h3>
+            <div class="announce-card">
+              <div class="announce-item">
+                <h4>Site Maintenance</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis iste earum eum tempore...</p>
+              </div>
+              <hr/>
+              <div class="announce-item">
+                <h4>Community Share Day</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis iste earum eum tempore...</p>
+              </div>
+              <hr/>
+              <div class="announce-item">
+                <h4>Updated Privacy Policy</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis iste earum eum tempore...</p>
+              </div>
+            </div>
+          </section>
+ 
+          <!-- TRENDING -->
+          <section class="trending">
+            <h3 class="section-title">Trending</h3>
+            <div class="trending-card">
+              <div class="trending-item">
+                <img src="profil.png" alt="user" class="avatar"/>
+                <div>
+                  <p class="trend-handle">@tegan</p>
+                  <p class="trend-desc">World Peace Builder</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <img src="profil.png" alt="user" class="avatar"/>
+                <div>
+                  <p class="trend-handle">@whoknows</p>
+                  <p class="trend-desc">Super Cool Project</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <img src="profil.png" alt="user" class="avatar"/>
+                <div>
+                  <p class="trend-handle">@kendall</p>
+                  <p class="trend-desc">Life Changing App</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <img src="profil.png" alt="user" class="avatar"/>
+                <div>
+                  <p class="trend-handle">@alex</p>
+                  <p class="trend-desc">No Traffic Maker</p>
+                </div>
+              </div>
+            </div>
+          </section>
+ 
+        </aside>
       </div>
     </div>
-    <div class="header">
-      <div class="serach-bar">
-        <div class="btn-search">
-          <i class="fa-solid fa-magnifying-glass fa-xl" id="icon-serach"></i
-          ><input type="search" id="input-search" />
-        </div>
-        <div class="info-profil">
-          <i class="fa-solid fa-bell fa-xl" id="icon-bell"></i>
-          <img src="/profil.png" alt="profil" width="60px" id="profil-img" />
-          <h3>Youssef</h3>
-        </div>
-      </div>
-      <div class="profile">
-        <div class="header-profile">
-          <img src="/profil.png" alt="profil" width="80px" id="h-p-profile" />
-          <h4 class="pro-h4">Hi there,</h4>
-          <h2 class="pro-h2">Youssef Oudada(@whoknows)</h2>
-        </div>
-        <div class="header-btns">
-          <button class="pro-btn">New</button
-          ><button class="pro-btn">Upload</button
-          ><button class="pro-btn">Share</button>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-    <div class="project">
-    <h3 id="project-h3">Your Porjects</h3>
-    <div class="card"><hr class="line"/><h4 class="card-4">Less cool Project</h4>
-    <p class="card-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error vero asperiores aut. Doloribus eius ab sint, blanditiis dolorem a numquam dicta accusantium repudiandae ipsum pariatur quod, ad voluptates magni animi?</p>
-    <div class="card-icon"><i class="fa-regular fa-square-plus"></i><i class="fa-regular fa-map"></i><i class="fa-solid fa-code-branch"></i></div></div>
-    <div class="card"><hr class="line"/><h4 class="card-4">Less cool Project</h4>
-    <p class="card-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error vero asperiores aut. Doloribus eius ab sint, blanditiis dolorem a numquam dicta accusantium repudiandae ipsum pariatur quod, ad voluptates magni animi?</p>
-    <div class="card-icon"><i class="fa-regular fa-square-plus"></i><i class="fa-regular fa-map"></i><i class="fa-solid fa-code-branch"></i></div></div>
-   <div class="card"><hr class="line"/><h4 class="card-4">Less cool Project</h4>
-    <p class="card-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error vero asperiores aut. Doloribus eius ab sint, blanditiis dolorem a numquam dicta accusantium repudiandae ipsum pariatur quod, ad voluptates magni animi?</p>
-    <div class="card-icon"><i class="fa-regular fa-square-plus"></i><i class="fa-regular fa-map"></i><i class="fa-solid fa-code-branch"></i></div></div>
-    <div class="card"><hr class="line"/><h4 class="card-4">Less cool Project</h4>
-    <p class="card-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error vero asperiores aut. Doloribus eius ab sint, blanditiis dolorem a numquam dicta accusantium repudiandae ipsum pariatur quod, ad voluptates magni animi?</p>
-    <div class="card-icon"><i class="fa-regular fa-square-plus"></i><i class="fa-regular fa-map"></i><i class="fa-solid fa-code-branch"></i></div></div>
-    <div class="card"><hr class="line"/><h4 class="card-4">Less cool Project</h4>
-    <p class="card-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error vero asperiores aut. Doloribus eius ab sint, blanditiis dolorem a numquam dicta accusantium repudiandae ipsum pariatur quod, ad voluptates magni animi?</p>
-    <div class="card-icon"><i class="fa-regular fa-square-plus"></i><i class="fa-regular fa-map"></i><i class="fa-solid fa-code-branch"></i></div></div>
-    <div class="card"><hr class="line"/><h4 class="card-4">Less cool Project</h4>
-    <p class="card-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error vero asperiores aut. Doloribus eius ab sint, blanditiis dolorem a numquam dicta accusantium repudiandae ipsum pariatur quod, ad voluptates magni animi?</p>
-    <div class="card-icon"><i class="fa-regular fa-square-plus"></i><i class="fa-regular fa-map"></i><i class="fa-solid fa-code-branch"></i></div></div>
-  </div>
-    <div class="announcements">
-    <h3>Announcements</h3>
-    <div class="anounc-card"><div><h3>Site Maintenance</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis reiciendis iste earum eum tempore non, voluptates illum soluta nisi iusto autem ...</p></div><hr><div><h3>Site Maintenance</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis reiciendis iste earum eum tempore non, voluptates illum soluta nisi iusto autem ...</p></div><hr><div><h3>Site Maintenance</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis reiciendis iste earum eum tempore non, voluptates illum soluta nisi iusto autem ...</p></div></div>
-    </div>
-  <div class="trending">
-      <h3 id="trend-h3">Trending</h3>
-      <div class="trending-cards">
-    <div class="trending-card">
-      <img src="./profil.png" alt="img" width="40px" id="trend-img">
-      <p id="trend-p">@hello</p>
-      <p id="trend-name"> lorem Lorem ipsum</p>
-    </div>
-    <div class="trending-card">
-      <img src="./profil.png" alt="img" width="40px" id="trend-img">
-      <p id="trend-p">@hello</p>
-      <p id="trend-name"> lorem Lorem ipsum</p>
-    </div>
-    <div class="trending-card">
-      <img src="./profil.png" alt="img" width="40px" id="trend-img">
-      <p id="trend-p">@hello</p>
-      <p id="trend-name"> lorem Lorem ipsum</p>
-    </div>
-  </div>
-  </div>
+ 
   </body>
 </html>
